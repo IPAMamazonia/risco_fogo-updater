@@ -11,7 +11,7 @@ def routine():
 
     try:
         delete_and_create_folder()
-
+        
         download_file(PAGE_URL)
         extract_zip_to_folder()
 
@@ -28,11 +28,11 @@ def routine():
             
             SlackBOT().send_msg('[+] Risco fogo shapefile atualizado :+1: '+generate_file_name(), '#risco_fogo')
         else:
-            print 'ola'
+
             SlackBOT().send_msg('[+] Nenhum shapefile novo.','#risco_fogo')
 
     except:
-        print 'oi'
+
         SlackBOT().send_msg('[-] Ocorreu algum erro. :-1:', '#risco_fogo')
 
 routine()

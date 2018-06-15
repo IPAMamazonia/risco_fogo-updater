@@ -15,7 +15,7 @@ def delete_and_create_folder():
 
     if os.path.exists(SHAPEFILES_FOLDER):
         remove_folder_and_shapeFiles()
-        os.makedirs(SHAPEFILES_FOLDER)
+    os.makedirs(SHAPEFILES_FOLDER)
         
 def extract_zip_to_folder():
     

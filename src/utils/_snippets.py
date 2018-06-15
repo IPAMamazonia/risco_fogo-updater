@@ -19,6 +19,8 @@ def check_if_new_shapefile():
     dt = datetime.date(year, month, day)
 
     if dt == datetime.datetime.today().date():
+
         return True
     else:
+
         return False
